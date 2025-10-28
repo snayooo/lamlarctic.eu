@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lamlarctic.eu
+
+# Sitemaps
+Sitemap: https://lamlarctic.eu/sitemap.xml
