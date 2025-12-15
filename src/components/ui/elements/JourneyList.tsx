@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import PocketBase, { RecordModel } from "pocketbase";
 
-const pb = new PocketBase("https://cms.lamlarctic.snac.dev");
+const pb = new PocketBase("https://cms.lamlarctic.eu");
 
 export default function JourneyCarousel() {
   const [posts, setPosts] = useState<RecordModel[]>([]);
@@ -107,7 +107,7 @@ export default function JourneyCarousel() {
                 >
                   {post.image && (
                     <img
-                      src={`https://cms.lamlarctic.snac.dev/api/files/${post.collectionId}/${post.id}/${post.image}`}
+                      src={`https://cms.lamlarctic.eu/api/files/${post.collectionId}/${post.id}/${post.image}`}
                       alt={post.title || "Journey image"}
                       className="w-full h-60 md:h-72 object-cover"
                     />
