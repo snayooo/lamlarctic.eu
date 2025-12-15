@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 import PocketBase, { RecordModel } from "pocketbase";
 import Link from "next/link";
 
-const pb = new PocketBase("https://cms.lamlarctic.snac.dev");
+const pb = new PocketBase("https://cms.lamlarctic.eu");
 
 export default function SponsorMarquee() {
   const [sponsors, setSponsors] = useState<RecordModel[]>([]);
@@ -76,7 +76,7 @@ export default function SponsorMarquee() {
             className="flex-shrink-0"
           >
             <img
-              src={`https://cms.lamlarctic.snac.dev/api/files/${sponsor.collectionId}/${sponsor.id}/${sponsor.logo}`}
+              src={`https://cms.lamlarctic.eu/api/files/${sponsor.collectionId}/${sponsor.id}/${sponsor.logo}`}
               alt={sponsor.sponsor_name}
               className="h-24 md:h-32 px-6 object-contain"
             />
